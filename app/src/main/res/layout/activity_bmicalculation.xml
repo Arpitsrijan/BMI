@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e1d1d"
+    tools:context=".bmicalculation">
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="340dp"
+        android:layout_height="300dp"
+        android:id="@+id/lotteviewatlast"
+        app:lottie_autoPlay="true"
+        android:layout_centerHorizontal="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/treadmill"/>
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lotteviewatlast"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cardbackground"
+        >
+
+        <TextView
+            android:id="@+id/textbmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="55"
+            android:textAlignment="center"
+            android:textColor="#EFCF8D"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textbmi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/raleway"
+            android:text="GENDER"
+            android:textAlignment="center"
+            android:textColor="#EFCF8D"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textdeclaration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textgender"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/raleway"
+            android:text="HEY! YOUR BMI CATEGORY  IS "
+            android:textAlignment="center"
+            android:textColor="#EFCF8D"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="RECALCULATE YOUR BMI"
+        android:fontFamily="@font/raleway"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/recalculatebmi"
+        android:textColor="#90170B0B"
+        android:background="@drawable/buttonbackground" />
+
+
+
+
+</RelativeLayout>

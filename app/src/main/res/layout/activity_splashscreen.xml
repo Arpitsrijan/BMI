@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#2c2c2c"
+    android:layout_height="match_parent"
+    tools:context=".splashscreen">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/splashtext"
+        android:src="@drawable/bmifinall"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"/>
+    
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:id="@+id/lotte"
+        app:lottie_rawRes="@raw/lf30_editor_adzu4rui"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI CALCULATOR"
+        android:textSize="30sp"
+        android:fontFamily="@font/raleway"
+        android:textStyle="bold"
+        android:textColor="#EFCF8D"
+        android:id="@+id/splashtext"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/lotte"
+        android:layout_marginBottom="100dp"/>
+</RelativeLayout>
